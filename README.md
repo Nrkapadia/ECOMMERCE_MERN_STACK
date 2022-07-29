@@ -3,11 +3,7 @@
 # Prerequisite
 
 1.  Must have basic knowledge of **Node**, **React**, **Express**, **MongoDB** 
-2.  Node - https://youtu.be/BSO9C8Z-YV8
-3.  React - https://youtu.be/99kgUCIMboY
-4.  Express - https://youtu.be/teipbke8c4A\
-5.  MongoDB - https://youtu.be/AYDP1S5BbTo
-6.  RestApi - https://youtu.be/AhCSfuG9Jxw _(optional)_
+
 
 # Install Dependencies
 
