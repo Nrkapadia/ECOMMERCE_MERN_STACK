@@ -50,13 +50,14 @@ const OrderList = ({ history }) => {
   }, [dispatch, alert, error, deleteError, history, isDeleted]);
 
   const columns = [
-    { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 },
+    { field: "id", headerName: "Order ID", minWidth: 250, flex: 0.8 },
 
     {
       field: "status",
       headerName: "Status",
-      minWidth: 150,
-      flex: 0.5,
+  
+      minWidth: 100,
+      flex: 0.3,
       cellClassName: (params) => {
         return params.getValue(params.id, "status") === "Delivered"
           ? "greenColor"

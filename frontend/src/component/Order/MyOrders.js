@@ -19,13 +19,13 @@ const MyOrders = () => {
   const { user } = useSelector((state) => state.user);
 
   const columns = [
-    { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 },
+    { field: "id", headerName: "Order ID", minWidth: 300, flex: 0.6 },
 
     {
       field: "status",
       headerName: "Status",
       minWidth: 150,
-      flex: 0.5,
+      flex: 0.2,
       cellClassName: (params) => {
         return params.getValue(params.id, "status") === "Delivered"
           ? "greenColor"
@@ -37,7 +37,7 @@ const MyOrders = () => {
       headerName: "Items Qty",
       type: "number",
       minWidth: 150,
-      flex: 0.3,
+      flex: 0.35,
     },
 
     {
@@ -45,12 +45,12 @@ const MyOrders = () => {
       headerName: "Amount",
       type: "number",
       minWidth: 270,
-      flex: 0.5,
+      flex: 0.4,
     },
 
     {
       field: "actions",
-      flex: 0.3,
+      flex: 0.2,
       headerName: "Actions",
       minWidth: 150,
       type: "number",
@@ -101,8 +101,7 @@ const MyOrders = () => {
             className="myOrdersTable"
             autoHeight
           />
-
-          <Typography id="myOrdersHeading">{user.name}'s Orders</Typography>
+          <Typography  id="myOrdersHeading">{user.name}'s Orders</Typography>
         </div>
       )}
     </Fragment>

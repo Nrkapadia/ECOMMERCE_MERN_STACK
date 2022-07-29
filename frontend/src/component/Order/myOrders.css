@@ -17,9 +17,9 @@
   font: 400 1.2vmax "Roboto";
   padding: 0.5vmax;
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
+  color: rgb(7, 4, 4);
   transition: all 0.5s;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(121, 37, 37);
 }
 
 .myOrdersTable {

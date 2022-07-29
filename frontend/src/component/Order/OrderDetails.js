@@ -37,17 +37,17 @@ const OrderDetails = ({ match }) => {
               <Typography>Shipping Info</Typography>
               <div className="orderDetailsContainerBox">
                 <div>
-                  <p>Name:</p>
+                  <p>Name : </p>
                   <span>{order.user && order.user.name}</span>
                 </div>
                 <div>
-                  <p>Phone:</p>
+                  <p>Phone : </p>
                   <span>
                     {order.shippingInfo && order.shippingInfo.phoneNo}
                   </span>
                 </div>
                 <div>
-                  <p>Address:</p>
+                  <p>Address : </p>
                   <span>
                     {order.shippingInfo &&
                       `${order.shippingInfo.address}, ${order.shippingInfo.city}, ${order.shippingInfo.state}, ${order.shippingInfo.pinCode}, ${order.shippingInfo.country}`}
@@ -73,7 +73,7 @@ const OrderDetails = ({ match }) => {
                 </div>
 
                 <div>
-                  <p>Amount:</p>
+                  <p>Amount : </p>
                   <span>{order.totalPrice && order.totalPrice}</span>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const OrderDetails = ({ match }) => {
             </div>
 
             <div className="orderDetailsCartItems">
-              <Typography>Order Items:</Typography>
+              <Typography>Order Items : </Typography>
               <div className="orderDetailsCartItemsContainer">
                 {order.orderItems &&
                   order.orderItems.map((item) => (

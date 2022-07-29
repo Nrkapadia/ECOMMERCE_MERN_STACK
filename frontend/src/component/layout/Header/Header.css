@@ -5,7 +5,9 @@
 }
 
 .speedDialIcon {
+  box-shadow: 5px 5px 15px rgba(28, 34, 39, 0.715);
   width: 56px;
   height: 56px;
+  aspect-ratio: 1;
   border-radius: 100%;
 }

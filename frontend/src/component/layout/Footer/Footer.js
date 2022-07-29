@@ -1,31 +1,38 @@
 import React from "react";
-import playStore from "../../../images/playstore.png";
-import appStore from "../../../images/Appstore.png";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import FbIcon from "@material-ui/icons/Facebook"
+import InstagramIcon from "@material-ui/icons/Instagram";
+import YtIcon from "@material-ui/icons/YouTube";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer id="footer">
-      <div className="leftFooter">
-        <h4>DOWNLOAD OUR APP</h4>
-        <p>Download App for Android and IOS mobile phone</p>
-        <img src={playStore} alt="playstore" />
-        <img src={appStore} alt="Appstore" />
-      </div>
+     
 
+     
       <div className="midFooter">
-        <h1>ECOMMERCE.</h1>
-        <p>High Quality is our first priority</p>
+        <div >
 
-        <p>Copyrights 2021 &copy; MeAbhiSingh</p>
+            <a href="https://www.linkedin.com/in/nisarg-kapadia-967a191b5" target="blank">
+              <LinkedInIcon />
+            </a> 
+            <a href="http://instagram.com/nisarg_kapadia1422" target="blank">
+              <InstagramIcon  />
+            </a> 
+            <a href="https://www.facebook.com/profile.php?id=100009194617166" target="blank">
+              <FbIcon  />
+            </a>  
+            <a href="https://www.youtube.com" target="blank"> 
+              <YtIcon />  
+            </a>
+   
+        </div>
+        <div className="copyRight">
+        <p>Copyrights&copy; 2022 Ecommerce.All rights resereved.</p>
+        </div>
       </div>
 
-      <div className="rightFooter">
-        <h4>Follow Us</h4>
-        <a href="http://instagram.com/meabhisingh">Instagram</a>
-        <a href="http://youtube.com/6packprogramemr">Youtube</a>
-        <a href="http://instagram.com/meabhisingh">Facebook</a>
-      </div>
     </footer>
   );
 };

@@ -3,6 +3,8 @@
   background-color: white;
   display: grid;
   grid-template-columns: 6fr 3fr;
+  margin-left: 200px;
+  min-width: 1316px;
 }
 
 .confirmOrderPage > div:last-child {
@@ -10,7 +12,7 @@
 }
 
 .confirmshippingArea {
-  padding: 5vmax;
+  padding: 6.5vmax;
   padding-bottom: 0%;
 }
 

@@ -47,12 +47,13 @@ function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
   const [stripeApiKey, setStripeApiKey] = useState("");
-
+  
   async function getStripeApiKey() {
     const { data } = await axios.get("/api/v1/stripeapikey");
-
+    
     setStripeApiKey(data.stripeApiKey);
   }
+  console.log(stripeApiKey)
 
   useEffect(() => {
     WebFont.load({
@@ -65,8 +66,8 @@ function App() {
 
     getStripeApiKey();
   }, []);
-
-  window.addEventListener("contextmenu", (e) => e.preventDefault());
+//this is for user to prevent to inspect !!!
+  //window.addEventListener("contextmenu", (e) => e.preventDefault());
 
   return (
     <Router>

@@ -18,16 +18,22 @@
   justify-content: center;
   align-items: center;
 }
-
-.profileContainer > div:first-child > h1 {
-  color: rgba(0, 0, 0, 0.555);
-  font: 500 2.2vmax "Roboto";
-  transform: translateX(-10vmax) translateY(-2vmax);
+.profileHeading{
+  text-align: center;
+  font-family: "Roboto";
+  margin-bottom: 15px;
 }
+/* .profileContainer > div:first-child > h1 {
+  color: rgba(55, 48, 48, 0.901);
+  
+  transform: translateX(-10vmax) translateY(-2vmax);
+} */
 
 .profileContainer > div:first-child > img {
   width: 20vmax;
   border-radius: 100%;
+  box-shadow: 0 10px 15px rgb(68, 68, 68);
+  aspect-ratio: 1;
   transition: all 0.5s;
 }
 
@@ -46,6 +52,11 @@
   margin: 4vmax;
   text-align: center;
   transition: all 0.5s;
+}
+
+.btn{
+  box-shadow: 3px 10px 15px rgba(85, 77, 77, 0.81);
+  border-radius: 20px;
 }
 
 .profileContainer > div:first-child > a:hover {
